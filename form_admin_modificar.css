@@ -1,0 +1,130 @@
+html{
+    box-sizing: border-box;
+}
+.titulo{
+    font-weight: bold;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.contenedor{
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: 7px 13px 57px #000;
+    color: #000;
+}
+
+.imagen-formulario{
+    background-position: center center;
+    flex: 0 0 calc(55%);
+    position: relative;
+}
+.imagen-formulario:hover {
+    filter: opacity(.5);
+}
+.imagen-formulario::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   
+}
+
+@media(min-width:768px){
+    .imagen-formulario{
+        height: auto;
+        background-position: right;
+    }
+
+}
+@media(min-width:1200px){
+    .imagen-formulario{
+        background-position: center;
+    }
+}
+
+@media(min-width:768px){
+    .contenedor-formulario{
+        display: flex;
+    }
+}
+
+.formulario{
+    margin: auto;
+    width: 510px;
+}
+.texto-formulario h2, .input label, .password-olvidada a, .texto-formulario p{
+    color: #000;
+}
+.texto-formulario h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+.texto-formulario p{
+    font-size: 18px;
+    text-align: center; 
+}
+.formu label{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0;
+    color: #000;
+}
+.password-olvidada a{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 22px;
+}
+.formu i{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(236, 102, 102);
+}
+.formu input, .formu button[id="registrar"]{
+    width: 80%;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.formu select{
+    width: 80%;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.formu button[id="registrar"]{
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    margin: 20px auto;
+    text-align: center;
+    width: 60%;
+    border-color: #000;
+    display: block;
+    background-color: rgb(235, 235, 235);
+}
+.formu button[id="registrar"]:hover{
+    cursor: pointer;
+    background-color: #969696;
+}
+.formulario p a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+.formulario p{
+    text-align: center;
+}
+.formu1{
+    text-align: center;
+}
